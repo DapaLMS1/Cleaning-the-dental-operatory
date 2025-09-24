@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infection Control: Cleaning the Dental Operatory</title>
+    <style>
+        /* --- Basic Setup & Colours --- */
+        :root {
+            --dark-purple: #532A8C;
+            --medium-purple: #9D8ABB;
+            --light-purple: #C3ACE8;
+            --accent-green: #7ABF49;
+            --light-green: #96BF78;
+            --light-grey: #F2F2F2;
+            --text-dark: #333;
+            --text-light: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-color: var(--light-grey);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- Main Layout --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--text-light);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: var(--dark-purple);
+            text-align: center;
+            border-bottom: 2px solid var(--accent-green);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        header p {
+            text-align: center;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* --- Interactive Accordion Styling --- */
+        .accordion-item {
+            border: 2px solid var(--medium-purple);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden; /* Important for the transition effect */
+        }
+
+        .accordion-header {
+            background-color: var(--dark-purple);
+            color: var(--text-light);
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: var(--medium-purple);
+        }
+
+        .accordion-header h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .accordion-header .icon {
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            background-color: #fdfcff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding: 0 20px;
+        }
+        
+        .accordion-content p, .accordion-content ul, .accordion-content ol {
+            margin-top: 0;
+        }
+
+        .accordion-content ul, .accordion-content ol {
+            padding-left: 20px;
+        }
+
+        .accordion-content li {
+            margin-bottom: 10px;
+        }
+        
+        .accordion-content strong {
+            color: var(--dark-purple);
+        }
+        
+        .procedure-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .procedure-step .number {
+            flex-shrink: 0;
+            background-color: var(--accent-green);
+            color: var(--text-light);
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+        
+        cite {
+            display: block;
+            font-size: 0.8em;
+            color: #777;
+            font-style: normal;
+            margin-top: 5px;
+        }
+        
+        .key-term {
+            background-color: var(--light-purple);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Interactive Guide: Cleaning the Dental Operatory</h1>
+            <p>Select each step below to reveal detailed procedures and best practices for maintaining a safe clinical environment.</p>
+        </header>
+
+        <div class="accordion">
+
+            <!-- Item 1: Core Principle -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>The Core Principle: Clean to Dirty</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>The entire cleaning process is governed by a single, critical principle: always work from the <span class="key-term">cleanest area to the most contaminated area</span>. The rationale is to prevent transferring a heavy load of microorganisms from a dirty surface onto a cleaner one, which would defeat the purpose of cleaning.</p>
+                </div>
+            </div>
+
+            <!-- Item 2: Preparation -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Step 1: Preparation & Clearing the Area</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Immediately after the patient leaves, the area must be safely cleared before the main cleaning can begin.</p>
+                    <ul>
+                        <li><strong>Practitioner's Role:</strong> The dentist or operator is responsible for removing and disposing of all sharps they used (needles, burs, scalpel blades). This is <span class="key-term">not the Dental Assistant's (DA's) role</span>.</li>
+                        <li><strong>DA's Initial Tasks:</strong> While still wearing PPE from the procedure, the DA flushes suction lines and handpieces, then removes all reusable instruments into a rigid, lidded container for transport to the sterilisation area.</li>
+                        <li><strong>Discard Barriers:</strong> All single-use items and barrier wraps are removed and disposed of correctly.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Item 3: The Cleaning Sequence -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Step 2: The Systematic Cleaning Sequence</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>After returning to the operatory and donning a <span class="key-term">fresh pair of gloves</span>, the detailed wipe-down begins. Using a TGA-approved, pH-neutral detergent, clean the following surfaces in order, using a new wipe for each new area.</p>
+                    
+                    <div class="procedure-step">
+                        <div class="number">1</div>
+                        <div><strong>Overhead Light:</strong> Start with the handles and surfaces of the operating light.</div>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="number">2</div>
+                        <div><strong>Benchtops & Equipment:</strong> Wipe down all benchtops and small equipment like the X-ray head.</div>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="number">3</div>
+                        <div><strong>Dental Unit & Tubing:</strong> Clean the unit arms, bracket table, and all tubing for handpieces and suction.</div>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="number">4</div>
+                        <div><strong>Operator Chairs:</strong> Wipe the dentist's and assistant's chairs.</div>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="number">5</div>
+                        <div><strong>Patient Chair:</strong> Thoroughly clean the entire patient chair, including the headrest and armrests.</div>
+                    </div>
+                     <div class="procedure-step">
+                        <div class="number">6</div>
+                        <div><strong>Spittoon & Suction:</strong> Finish with the most contaminated areas: the spittoon and suction connections.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Correct Technique -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Step 3: Correct Technique & Products</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Wiping Method:</strong> Use an <span class="key-term">'S' motion</span> without lifting the cloth. This ensures the entire surface is covered effectively and prevents re-contaminating areas.</li>
+                        <li><strong>Products:</strong> Use a pH-neutral or mildly alkaline detergent. For soft upholstery on the dental chair, special products may be required to avoid damage. Always follow the chair manufacturer's instructions for use (IFU).</li>
+                        <li><strong>No Direct Spraying:</strong> Never spray cleaners directly onto a surface. This can aerosolise contaminants. Always apply the product to the cloth first.</li>
+                        <li><strong>Drying:</strong> After cleaning, all surfaces must be wiped dry with a clean, dry, lint-free cloth. A dry surface is less likely to support microbial growth.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Item 5: PPE Doffing -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Step 4: Safe PPE Removal (Doffing)</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Safely removing PPE is the final step to prevent contaminating yourself or the clean environment. This must be done in a specific sequence.</p>
+                    <ol>
+                        <li><strong>Remove Gloves:</strong> Peel off gloves without touching your bare skin with the contaminated outer surface. Discard.</li>
+                        <li><strong>Perform Hand Hygiene.</strong></li>
+                        <li><strong>Remove Gown:</strong> Unfasten ties and roll the gown inside-out. Discard.</li>
+                        <li><strong>Perform Hand Hygiene.</strong></li>
+                        <li><strong>Remove Eye Protection:</strong> Handle by the earpieces or headband only.</li>
+                        <li><strong>Remove Mask:</strong> Grasp the ties or elastic bands. Do not touch the front of the mask. Discard.</li>
+                        <li><strong>Perform Final Hand Hygiene.</strong></li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.padding = "0 20px";
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.style.padding = "20px";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
